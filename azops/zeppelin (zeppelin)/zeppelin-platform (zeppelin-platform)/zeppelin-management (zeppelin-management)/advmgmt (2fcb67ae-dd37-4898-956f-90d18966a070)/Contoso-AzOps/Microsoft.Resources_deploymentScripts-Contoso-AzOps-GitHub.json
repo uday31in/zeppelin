@@ -1,0 +1,36 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Resources/deploymentScripts",
+      "name": "Contoso-AzOps-GitHub",
+      "apiVersion": "2020-10-01",
+      "location": "[resourceGroup().location]",
+      "tags": null,
+      "properties": {
+        "provisioningState": "Succeeded",
+        "azPowerShellVersion": "5.5",
+        "arguments": "-ResourceGroupName Contoso-AzOps -KeyVault Contoso-AzOps-azqgedjex6 -NewRepositoryName ContosoPlatform -GitHubUserNameOrOrg krnese -SPNSecretName SPNSecret -SpnAppId 6a24190f-405d-4044-bdbe-ae184ae3f51d -PATSecretName PATSecret -AzureTenantId 3fc1081d-6105-4e19-b60c-1ec1252cf560 -EnterpriseScalePrefix Contoso -AzureSubscriptionId 2fcb67ae-dd37-4898-956f-90d18966a070",
+        "primaryScriptUri": "https://raw.githubusercontent.com/krnese/ns/master/umiAzOpsSetup.ps1",
+        "retentionInterval": "P1D",
+        "timeout": "PT30M",
+        "containerSettings": {},
+        "status": {
+          "containerInstanceId": "/subscriptions/2fcb67ae-dd37-4898-956f-90d18966a070/resourceGroups/Contoso-AzOps/providers/Microsoft.ContainerInstance/containerGroups/6vrmqdvwicqywazscripts",
+          "storageAccountId": "/subscriptions/2fcb67ae-dd37-4898-956f-90d18966a070/resourceGroups/Contoso-AzOps/providers/Microsoft.Storage/storageAccounts/6vrmqdvwicqywazscripts",
+          "startTime": "2021-03-18T18:04:07.3842679Z",
+          "endTime": "2021-03-18T18:14:52.9732124Z",
+          "expirationTime": "2021-03-19T18:14:52.9732124Z"
+        },
+        "outputs": {
+          "New Repository": "ContosoPlatform"
+        },
+        "cleanupPreference": "OnSuccess"
+      }
+    }
+  ],
+  "outputs": {}
+}

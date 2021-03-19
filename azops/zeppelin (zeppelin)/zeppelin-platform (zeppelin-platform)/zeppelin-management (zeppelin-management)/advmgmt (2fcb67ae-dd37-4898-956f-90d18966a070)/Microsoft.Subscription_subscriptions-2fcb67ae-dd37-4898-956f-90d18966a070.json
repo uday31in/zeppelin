@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Management/managementGroups",
+      "name": "2fcb67ae-dd37-4898-956f-90d18966a070",
+      "apiVersion": "2020-10-01",
+      "location": "[resourceGroup().location]",
+      "tags": null,
+      "properties": null
+    }
+  ],
+  "outputs": {}
+}

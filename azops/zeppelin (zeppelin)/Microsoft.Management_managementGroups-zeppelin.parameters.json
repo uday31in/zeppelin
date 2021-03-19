@@ -1,0 +1,45 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "zeppelin",
+        "DisplayName": "zeppelin",
+        "ParentId": "/providers/Microsoft.Management/managementGroups/3fc1081d-6105-4e19-b60c-1ec1252cf560",
+        "ParentName": "3fc1081d-6105-4e19-b60c-1ec1252cf560",
+        "Children": [
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/zeppelin-decommissioned",
+            "Name": "zeppelin-decommissioned",
+            "DisplayName": "zeppelin-decommissioned",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/zeppelin-landingzones",
+            "Name": "zeppelin-landingzones",
+            "DisplayName": "zeppelin-landingzones",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/zeppelin-platform",
+            "Name": "zeppelin-platform",
+            "DisplayName": "zeppelin-platform",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/zeppelin-sandboxes",
+            "Name": "zeppelin-sandboxes",
+            "DisplayName": "zeppelin-sandboxes",
+            "Children": null
+          }
+        ]
+      }
+    }
+  }
+}

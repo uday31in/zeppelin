@@ -1,0 +1,43 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/policyAssignments",
+      "name": "Deploy-Log-Analytics",
+      "apiVersion": "2020-09-01",
+      "location": "[deployment().location]",
+      "properties": {
+        "Scope": "/providers/Microsoft.Management/managementGroups/zeppelin-management",
+        "NotScopes": null,
+        "DisplayName": "Deploy-Log-Analytics",
+        "Description": "Deploy-Log-Analytics",
+        "EnforcementMode": 0,
+        "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/zeppelin/providers/Microsoft.Authorization/policyDefinitions/Deploy-Log-Analytics",
+        "Parameters": {
+          "workspaceName": {
+            "value": "zeppelin-la-2fcb67ae-dd37-4898-956f-90d18966a070"
+          },
+          "automationAccountName": {
+            "value": "zeppelin-a-2fcb67ae-dd37-4898-956f-90d18966a070"
+          },
+          "workspaceRegion": {
+            "value": "northeurope"
+          },
+          "automationRegion": {
+            "value": "northeurope"
+          },
+          "rgName": {
+            "value": "zeppelin-mgmt"
+          },
+          "retentionInDays": {
+            "value": "30"
+          }
+        }
+      }
+    }
+  ],
+  "outputs": {}
+}

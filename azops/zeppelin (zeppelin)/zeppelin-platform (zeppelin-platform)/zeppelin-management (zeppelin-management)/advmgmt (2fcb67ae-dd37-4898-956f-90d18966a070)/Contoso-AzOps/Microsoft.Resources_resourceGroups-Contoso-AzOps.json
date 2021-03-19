@@ -1,0 +1,9 @@
+{
+  "ResourceGroupName": "Contoso-AzOps",
+  "Location": "westeurope",
+  "ProvisioningState": "Succeeded",
+  "Tags": null,
+  "TagsTable": null,
+  "ResourceId": "/subscriptions/2fcb67ae-dd37-4898-956f-90d18966a070/resourceGroups/Contoso-AzOps",
+  "ManagedBy": null
+}

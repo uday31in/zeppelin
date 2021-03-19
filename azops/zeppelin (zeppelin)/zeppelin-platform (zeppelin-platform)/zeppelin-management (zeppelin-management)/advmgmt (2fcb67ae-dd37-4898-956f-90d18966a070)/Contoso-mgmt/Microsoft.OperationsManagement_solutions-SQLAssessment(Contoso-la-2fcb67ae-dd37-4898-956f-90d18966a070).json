@@ -1,0 +1,25 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.OperationsManagement/solutions",
+      "name": "SQLAssessment(Contoso-la-2fcb67ae-dd37-4898-956f-90d18966a070)",
+      "apiVersion": "2015-11-01-preview",
+      "location": "[resourceGroup().location]",
+      "tags": null,
+      "properties": {
+        "workspaceResourceId": "/subscriptions/2fcb67ae-dd37-4898-956f-90d18966a070/resourcegroups/Contoso-mgmt/providers/Microsoft.OperationalInsights/workspaces/Contoso-la-2fcb67ae-dd37-4898-956f-90d18966a070",
+        "provisioningState": "Succeeded",
+        "creationTime": "Tue, 16 Mar 2021 16:51:04 GMT",
+        "lastModifiedTime": "Thu, 18 Mar 2021 18:02:16 GMT",
+        "containedResources": [
+          "/subscriptions/2fcb67ae-dd37-4898-956f-90d18966a070/resourcegroups/Contoso-mgmt/providers/Microsoft.OperationalInsights/workspaces/Contoso-la-2fcb67ae-dd37-4898-956f-90d18966a070/views/SQLAssessment(Contoso-la-2fcb67ae-dd37-4898-956f-90d18966a070)"
+        ]
+      }
+    }
+  ],
+  "outputs": {}
+}

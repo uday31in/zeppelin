@@ -1,0 +1,41 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "microsoft.operationalinsights/workspaces",
+      "name": "Contoso-la-2fcb67ae-dd37-4898-956f-90d18966a070",
+      "apiVersion": "2020-10-01",
+      "location": "[resourceGroup().location]",
+      "tags": null,
+      "properties": {
+        "source": "Azure",
+        "customerId": "e27748fb-8cc7-4225-b159-555768ae3c1e",
+        "provisioningState": "Succeeded",
+        "sku": {
+          "name": "pernode",
+          "maxCapacityReservationLevel": 3000,
+          "lastSkuUpdate": "Tue, 16 Mar 2021 16:50:20 GMT"
+        },
+        "retentionInDays": 30,
+        "features": {
+          "legacy": 0,
+          "searchVersion": 1,
+          "enableLogAccessUsingOnlyResourcePermissions": true
+        },
+        "workspaceCapping": {
+          "dailyQuotaGb": -1,
+          "quotaNextResetTime": "Fri, 19 Mar 2021 15:00:00 GMT",
+          "dataIngestionStatus": "RespectQuota"
+        },
+        "publicNetworkAccessForIngestion": "Enabled",
+        "publicNetworkAccessForQuery": "Enabled",
+        "createdDate": "Tue, 16 Mar 2021 16:50:20 GMT",
+        "modifiedDate": "Thu, 18 Mar 2021 18:01:58 GMT"
+      }
+    }
+  ],
+  "outputs": {}
+}

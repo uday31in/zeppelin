@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
+      "name": "Contoso-AzOps-umi",
+      "apiVersion": "2018-11-30",
+      "location": "[resourceGroup().location]",
+      "tags": {},
+      "properties": {
+        "tenantId": "3fc1081d-6105-4e19-b60c-1ec1252cf560",
+        "principalId": "37aee122-3921-43e5-a2ab-3da7aa38b6fe",
+        "clientId": "c026fb3b-c687-4930-8ae3-fe6dc56568cd"
+      }
+    }
+  ],
+  "outputs": {}
+}

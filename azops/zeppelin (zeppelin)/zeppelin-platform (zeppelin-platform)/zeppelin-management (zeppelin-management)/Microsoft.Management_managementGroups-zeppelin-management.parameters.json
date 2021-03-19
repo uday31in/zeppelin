@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "zeppelin-management",
+        "DisplayName": "zeppelin-management",
+        "ParentId": "/providers/Microsoft.Management/managementGroups/zeppelin-platform",
+        "ParentName": "zeppelin-platform",
+        "Children": [
+          {
+            "Type": "/subscriptions",
+            "Id": "/subscriptions/2fcb67ae-dd37-4898-956f-90d18966a070",
+            "Name": "2fcb67ae-dd37-4898-956f-90d18966a070",
+            "DisplayName": "advmgmt",
+            "Children": null
+          }
+        ]
+      }
+    }
+  }
+}
